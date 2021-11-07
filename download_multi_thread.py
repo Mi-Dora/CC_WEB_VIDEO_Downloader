@@ -116,7 +116,9 @@ path_save_keyframes = save_path + 'Keyframes/'
 if args.no_keyframes:
     keyframe_infos = read_file_info('Shot_Info.txt')
     download_Keyframes(keyframe_infos, num_thread)
+    print('Done.')
 if args.no_videos:
     video_infos = read_file_info('Video_List.txt')
     download_videos(video_infos, num_thread)
+    print('Done')
 
